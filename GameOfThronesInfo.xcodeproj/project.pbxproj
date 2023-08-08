@@ -13,6 +13,7 @@
 		F55BE65E2A827155001933F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F55BE65D2A827155001933F7 /* Assets.xcassets */; };
 		F55BE6612A827155001933F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55BE65F2A827155001933F7 /* LaunchScreen.storyboard */; };
 		F55BE66C2A827345001933F7 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BE66B2A827345001933F7 /* MainCollectionViewController.swift */; };
+		F55BE66F2A82799D001933F7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BE66E2A82799D001933F7 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F55BE6602A827155001933F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F55BE6622A827155001933F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F55BE66B2A827345001933F7 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
+		F55BE66E2A82799D001933F7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		F55BE6482A827151001933F7 = {
 			isa = PBXGroup;
 			children = (
+				F55BE6702A827C79001933F7 /* Models */,
 				F55BE6532A827151001933F7 /* GameOfThronesInfo */,
 				F55BE6522A827151001933F7 /* Products */,
 			);
@@ -97,6 +100,14 @@
 				F55BE66B2A827345001933F7 /* MainCollectionViewController.swift */,
 			);
 			path = Viewcontrollers;
+			sourceTree = "<group>";
+		};
+		F55BE6702A827C79001933F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F55BE66E2A82799D001933F7 /* Model.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +184,7 @@
 				F55BE6552A827151001933F7 /* AppDelegate.swift in Sources */,
 				F55BE66C2A827345001933F7 /* MainCollectionViewController.swift in Sources */,
 				F55BE6572A827151001933F7 /* SceneDelegate.swift in Sources */,
+				F55BE66F2A82799D001933F7 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
