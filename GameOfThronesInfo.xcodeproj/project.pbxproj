@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		F55BE6552A827151001933F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BE6542A827151001933F7 /* AppDelegate.swift */; };
 		F55BE6572A827151001933F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BE6562A827151001933F7 /* SceneDelegate.swift */; };
-		F55BE6592A827151001933F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BE6582A827151001933F7 /* ViewController.swift */; };
 		F55BE65C2A827151001933F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55BE65A2A827151001933F7 /* Main.storyboard */; };
 		F55BE65E2A827155001933F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F55BE65D2A827155001933F7 /* Assets.xcassets */; };
 		F55BE6612A827155001933F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55BE65F2A827155001933F7 /* LaunchScreen.storyboard */; };
+		F55BE66C2A827345001933F7 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BE66B2A827345001933F7 /* MainCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F55BE6512A827151001933F7 /* GameOfThronesInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfThronesInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55BE6542A827151001933F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F55BE6562A827151001933F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F55BE6582A827151001933F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F55BE65B2A827151001933F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F55BE65D2A827155001933F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F55BE6602A827155001933F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F55BE6622A827155001933F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F55BE66B2A827345001933F7 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,47 @@
 		F55BE6532A827151001933F7 /* GameOfThronesInfo */ = {
 			isa = PBXGroup;
 			children = (
-				F55BE6542A827151001933F7 /* AppDelegate.swift */,
-				F55BE6562A827151001933F7 /* SceneDelegate.swift */,
-				F55BE6582A827151001933F7 /* ViewController.swift */,
-				F55BE65A2A827151001933F7 /* Main.storyboard */,
-				F55BE65D2A827155001933F7 /* Assets.xcassets */,
-				F55BE65F2A827155001933F7 /* LaunchScreen.storyboard */,
-				F55BE6622A827155001933F7 /* Info.plist */,
+				F55BE6692A8272D5001933F7 /* Storyboards */,
+				F55BE66A2A8272F0001933F7 /* Resourses */,
+				F55BE6682A827258001933F7 /* App */,
+				F55BE66D2A82734E001933F7 /* Viewcontrollers */,
 			);
 			path = GameOfThronesInfo;
+			sourceTree = "<group>";
+		};
+		F55BE6682A827258001933F7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F55BE6622A827155001933F7 /* Info.plist */,
+				F55BE6562A827151001933F7 /* SceneDelegate.swift */,
+				F55BE6542A827151001933F7 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F55BE6692A8272D5001933F7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F55BE65A2A827151001933F7 /* Main.storyboard */,
+				F55BE65F2A827155001933F7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F55BE66A2A8272F0001933F7 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				F55BE65D2A827155001933F7 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		F55BE66D2A82734E001933F7 /* Viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				F55BE66B2A827345001933F7 /* MainCollectionViewController.swift */,
+			);
+			path = Viewcontrollers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +170,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F55BE6592A827151001933F7 /* ViewController.swift in Sources */,
 				F55BE6552A827151001933F7 /* AppDelegate.swift in Sources */,
+				F55BE66C2A827345001933F7 /* MainCollectionViewController.swift in Sources */,
 				F55BE6572A827151001933F7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,12 +321,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XKWG4AGNW6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GameOfThronesInfo/Info.plist;
+				INFOPLIST_FILE = GameOfThronesInfo/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +334,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = you.Coll.GameOfThronesInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +352,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XKWG4AGNW6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GameOfThronesInfo/Info.plist;
+				INFOPLIST_FILE = GameOfThronesInfo/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +365,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = you.Coll.GameOfThronesInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
