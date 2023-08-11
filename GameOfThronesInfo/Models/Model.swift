@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 struct PersonalInfo: Decodable {
     let id: Int
     let firstName: String
@@ -17,3 +18,4 @@ struct PersonalInfo: Decodable {
     let image: String
     let imageUrl: String
 }
+

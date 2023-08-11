@@ -14,6 +14,9 @@
 		F55BE6612A827155001933F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55BE65F2A827155001933F7 /* LaunchScreen.storyboard */; };
 		F55BE66C2A827345001933F7 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BE66B2A827345001933F7 /* MainCollectionViewController.swift */; };
 		F55BE66F2A82799D001933F7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BE66E2A82799D001933F7 /* Model.swift */; };
+		F55BE6722A827D7A001933F7 /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BE6712A827D79001933F7 /* UserActionCell.swift */; };
+		F55BE6752A829F78001933F7 /* Networkmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BE6742A829F78001933F7 /* Networkmanager.swift */; };
+		F55BE6782A839943001933F7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BE6772A839943001933F7 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		F55BE6622A827155001933F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F55BE66B2A827345001933F7 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
 		F55BE66E2A82799D001933F7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F55BE6712A827D79001933F7 /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
+		F55BE6742A829F78001933F7 /* Networkmanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkmanager.swift; sourceTree = "<group>"; };
+		F55BE6772A839943001933F7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 		F55BE6532A827151001933F7 /* GameOfThronesInfo */ = {
 			isa = PBXGroup;
 			children = (
+				F55BE6762A829F87001933F7 /* Servises */,
+				F55BE6732A827D83001933F7 /* Views */,
 				F55BE6702A827C79001933F7 /* Models */,
 				F55BE6692A8272D5001933F7 /* Storyboards */,
 				F55BE66A2A8272F0001933F7 /* Resourses */,
@@ -98,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				F55BE66B2A827345001933F7 /* MainCollectionViewController.swift */,
+				F55BE6772A839943001933F7 /* ProfileViewController.swift */,
 			);
 			path = Viewcontrollers;
 			sourceTree = "<group>";
@@ -108,6 +117,22 @@
 				F55BE66E2A82799D001933F7 /* Model.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F55BE6732A827D83001933F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F55BE6712A827D79001933F7 /* UserActionCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F55BE6762A829F87001933F7 /* Servises */ = {
+			isa = PBXGroup;
+			children = (
+				F55BE6742A829F78001933F7 /* Networkmanager.swift */,
+			);
+			path = Servises;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,9 +206,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F55BE6722A827D7A001933F7 /* UserActionCell.swift in Sources */,
 				F55BE6552A827151001933F7 /* AppDelegate.swift in Sources */,
 				F55BE66C2A827345001933F7 /* MainCollectionViewController.swift in Sources */,
 				F55BE6572A827151001933F7 /* SceneDelegate.swift in Sources */,
+				F55BE6782A839943001933F7 /* ProfileViewController.swift in Sources */,
+				F55BE6752A829F78001933F7 /* Networkmanager.swift in Sources */,
 				F55BE66F2A82799D001933F7 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
