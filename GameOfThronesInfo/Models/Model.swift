@@ -5,9 +5,6 @@
 //  Created by Vlad on 8.8.23..
 //
 
-import Foundation
-
-
 struct PersonalInfo: Decodable {
     let id: Int
     let firstName: String

@@ -7,12 +7,10 @@
 
 import UIKit
 
-
-
-
 class MainCollectionViewController: UICollectionViewController {
     
     private var persons: [PersonalInfo] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchPersons()
@@ -44,16 +42,16 @@ class MainCollectionViewController: UICollectionViewController {
     // MARK: - UICollectionViewDelegate
     override func collectionView(_ collectionView: UICollectionView,
                                  didSelectItemAt indexPath: IndexPath
-                                 ) {
+    ) {
         let profileSelection = persons[indexPath.item]
         performSegue(withIdentifier: "showProfile", sender: profileSelection)
     }
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let profileVC = segue.destination as? ProfileViewController
-                  else { return }
+        else { return }
         profileVC.userAction = sender as? PersonalInfo
-    
+        
     }
 }
 extension MainCollectionViewController {

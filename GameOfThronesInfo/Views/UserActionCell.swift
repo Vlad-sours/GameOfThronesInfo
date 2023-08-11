@@ -9,12 +9,10 @@ import UIKit
 
 final class UserActionCell: UICollectionViewCell {
     
-    
     @IBOutlet weak var userActionImageView: UIImageView!
     @IBOutlet weak var fullNameLabel: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
-    
+        
     func configure(with person: PersonalInfo){
         fullNameLabel.text = person.fullName
         activityIndicator.startAnimating()
