@@ -20,11 +20,11 @@ final class UserActionCell: UICollectionViewCell {
         NetworkManager.shared.fetchImage(from: person.imageUrl) { [self] result in
             switch result{
             case .success(let imageData):
-                self.userActionImageView.image = UIImage(data: imageData)
-                self.activityIndicator.stopAnimating()
+                    self.userActionImageView.image = UIImage(data: imageData)
+                    self.activityIndicator.stopAnimating()
             case .failure(let error):
                 print(error)
-                self.userActionImageView.image = UIImage(named: "gOfTh")
+                    self.userActionImageView.image = UIImage(named: "gOfTh")
             }
         }
     }

@@ -144,7 +144,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ctx-0I-3Ae">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="ctx-0I-3Ae">
                                 <rect key="frame" x="156" y="233" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="qNM-6Q-Dpg"/>

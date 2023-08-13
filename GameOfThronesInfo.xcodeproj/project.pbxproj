@@ -17,6 +17,7 @@
 		F55BE6722A827D7A001933F7 /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BE6712A827D79001933F7 /* UserActionCell.swift */; };
 		F55BE6752A829F78001933F7 /* Networkmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BE6742A829F78001933F7 /* Networkmanager.swift */; };
 		F55BE6782A839943001933F7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BE6772A839943001933F7 /* ProfileViewController.swift */; };
+		F55BE67B2A88D691001933F7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F55BE67A2A88D691001933F7 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F55BE67B2A88D691001933F7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +153,9 @@
 			dependencies = (
 			);
 			name = GameOfThronesInfo;
+			packageProductDependencies = (
+				F55BE67A2A88D691001933F7 /* Alamofire */,
+			);
 			productName = GameOfThronesInfo;
 			productReference = F55BE6512A827151001933F7 /* GameOfThronesInfo.app */;
 			productType = "com.apple.product-type.application";
@@ -179,6 +184,9 @@
 				Base,
 			);
 			mainGroup = F55BE6482A827151001933F7;
+			packageReferences = (
+				F55BE6792A88D691001933F7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = F55BE6522A827151001933F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -436,6 +444,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F55BE6792A88D691001933F7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F55BE67A2A88D691001933F7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F55BE6792A88D691001933F7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F55BE6492A827151001933F7 /* Project object */;
 }

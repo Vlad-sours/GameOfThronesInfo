@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainCollectionViewController: UICollectionViewController {
+final class MainCollectionViewController: UICollectionViewController {
     
     private var persons: [PersonalInfo] = []
     
@@ -19,12 +19,12 @@ class MainCollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+        1
     }
     
     override func collectionView(_ collectionView: UICollectionView,
                                  numberOfItemsInSection section: Int) -> Int {
-        return persons.count
+        persons.count
     }
     
     override func collectionView(_ collectionView: UICollectionView,
@@ -55,7 +55,20 @@ class MainCollectionViewController: UICollectionViewController {
     }
 }
 extension MainCollectionViewController {
-    private func fetchPersons(){
+    private func fetchPersons() {
+        NetworkManager.shared.fetchPersons(from: Links.link) { [weak self] result in
+            switch result {
+            case .success(let persons):
+                self?.persons = persons
+                self?.collectionView.reloadData()
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+      
+    }
+    
+   /* private func fetchPersons(){
         NetworkManager.shared.fetch([PersonalInfo].self, from: link) {
             [self] result in
             switch result {
@@ -67,5 +80,5 @@ extension MainCollectionViewController {
             }
         }
         
-    }
+    }*/
 }
